@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/Featured-Image2.jpg.webp);
+background-size: cover;
+}
+.login_box{
+    height: 400px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(80, 80, 80, 0.5),
+inset  80px 80px 150px rgba(255, 255, 255, 0.5),
+inset -80px -80px 150px rgba(255, 255, 255, 0.5);
+}
+
+input[type="text"],[type="email"],[type="password"],button{
+    outline: none;
+    border: none;
+    height: 2rem;
+    width: 90%;
+    margin: 1rem 12px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-family:sans-serif;
+    transition: 0.4s;
+
+}
+input[type="text"]{
+    margin-top: 4rem;
+
+}
+input[type="text"],[type="email"],[type="password"],.btn{
+    padding-left: 15px;
+
+}
+input[type="text"]:focus,[type="email"]:focus,[type="password"]:focus{
+    background: #003d88;
+}
+
+
+.btn{
+    color: #003d88;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background: #003d88;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login_box">
+<form action="">
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+<input type="password" placeholder="Password" required>
+<button class="btn">login</button>
+<button class="btn">sinup</button>
+</form>
+        </div>
+    </div>
+    
+</body>
+</html>
